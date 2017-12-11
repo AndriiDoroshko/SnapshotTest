@@ -35,7 +35,39 @@
 		42A87DF91FDEE5BB007BB80B /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A87DFA1FDEE5BB007BB80B /* FBSnapshotTestCase.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		420A62871FDEF7870048B967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B31987F01AB782D000B0A900;
+			remoteInfo = "FBSnapshotTestCase iOS";
+		};
+		420A62891FDEF7870048B967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B31987FB1AB782D100B0A900;
+			remoteInfo = "FBSnapshotTestCase iOS Tests";
+		};
+		420A628B1FDEF7870048B967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8271377A1C63AB6F00354E42;
+			remoteInfo = "FBSnapshotTestCase tvOS";
+		};
+		420A628D1FDEF7870048B967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 827137831C63AB7000354E42;
+			remoteInfo = "FBSnapshotTestCase tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FBSnapshotTestCase.xcodeproj; path = "ios-snapshot-test-case/FBSnapshotTestCase.xcodeproj"; sourceTree = "<group>"; };
 		42A87D661FDEA795007BB80B /* Snapshot_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snapshot_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A87D801FDEA812007BB80B /* Specifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
 		42A87D811FDEA812007BB80B /* HostWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostWindow.swift; sourceTree = "<group>"; };
@@ -77,9 +109,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420A62811FDEF7870048B967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				420A62881FDEF7870048B967 /* FBSnapshotTestCase.framework */,
+				420A628A1FDEF7870048B967 /* FBSnapshotTestCase iOS Tests.xctest */,
+				420A628C1FDEF7870048B967 /* FBSnapshotTestCase.framework */,
+				420A628E1FDEF7870048B967 /* FBSnapshotTestCase tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		42A87D5C1FDEA795007BB80B = {
 			isa = PBXGroup;
 			children = (
+				420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */,
 				42A87D681FDEA795007BB80B /* Snapshot-tests */,
 				42A87D671FDEA795007BB80B /* Products */,
 				42A87DBC1FDEB152007BB80B /* Frameworks */,
@@ -217,12 +261,49 @@
 			mainGroup = 42A87D5C1FDEA795007BB80B;
 			productRefGroup = 42A87D671FDEA795007BB80B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 420A62811FDEF7870048B967 /* Products */;
+					ProjectRef = 420A62801FDEF7870048B967 /* FBSnapshotTestCase.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				42A87D651FDEA795007BB80B /* Snapshot-tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		420A62881FDEF7870048B967 /* FBSnapshotTestCase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBSnapshotTestCase.framework;
+			remoteRef = 420A62871FDEF7870048B967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		420A628A1FDEF7870048B967 /* FBSnapshotTestCase iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FBSnapshotTestCase iOS Tests.xctest";
+			remoteRef = 420A62891FDEF7870048B967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		420A628C1FDEF7870048B967 /* FBSnapshotTestCase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBSnapshotTestCase.framework;
+			remoteRef = 420A628B1FDEF7870048B967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		420A628E1FDEF7870048B967 /* FBSnapshotTestCase tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FBSnapshotTestCase tvOS Tests.xctest";
+			remoteRef = 420A628D1FDEF7870048B967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		42A87D641FDEA795007BB80B /* Resources */ = {
@@ -318,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
