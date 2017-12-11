@@ -32,39 +32,8 @@
 		42A87DB21FDEADE3007BB80B /* Snapshot_tests.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A87DB11FDEADE2007BB80B /* Snapshot_tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A87DBB1FDEAFCD007BB80B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42A87DBA1FDEAFCD007BB80B /* Info.plist */; };
 		42A87DC21FDEB6E6007BB80B /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A87DC11FDEB6E6007BB80B /* Presentation.swift */; };
-		42A87DF51FDECCAC007BB80B /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A87DF11FDECCA5007BB80B /* FBSnapshotTestCase.framework */; };
+		42A87DF91FDEE5BB007BB80B /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A87DFA1FDEE5BB007BB80B /* FBSnapshotTestCase.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		42A87DEC1FDECCA5007BB80B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B31987F01AB782D000B0A900;
-			remoteInfo = "FBSnapshotTestCase iOS";
-		};
-		42A87DEE1FDECCA5007BB80B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B31987FB1AB782D100B0A900;
-			remoteInfo = "FBSnapshotTestCase iOS Tests";
-		};
-		42A87DF01FDECCA5007BB80B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8271377A1C63AB6F00354E42;
-			remoteInfo = "FBSnapshotTestCase tvOS";
-		};
-		42A87DF21FDECCA5007BB80B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 827137831C63AB7000354E42;
-			remoteInfo = "FBSnapshotTestCase tvOS Tests";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		42A87D661FDEA795007BB80B /* Snapshot_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snapshot_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +62,7 @@
 		42A87DB11FDEADE2007BB80B /* Snapshot_tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Snapshot_tests.h; path = "Snapshot-tests/Snapshot_tests.h"; sourceTree = SOURCE_ROOT; };
 		42A87DBA1FDEAFCD007BB80B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Codable refactor/OneMobileSDK-controls-ios/Demo/Tests/SnapshotTest/Supported Files/Info.plist"; sourceTree = "<group>"; };
 		42A87DC11FDEB6E6007BB80B /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
-		42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FBSnapshotTestCase.xcodeproj; path = "Snapshot-tests/submodule/ios-snapshot-test-case/FBSnapshotTestCase.xcodeproj"; sourceTree = "<group>"; };
+		42A87DFA1FDEE5BB007BB80B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A87DF51FDECCAC007BB80B /* FBSnapshotTestCase.framework in Frameworks */,
+				42A87DF91FDEE5BB007BB80B /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +80,6 @@
 		42A87D5C1FDEA795007BB80B = {
 			isa = PBXGroup;
 			children = (
-				42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */,
 				42A87D681FDEA795007BB80B /* Snapshot-tests */,
 				42A87D671FDEA795007BB80B /* Products */,
 				42A87DBC1FDEB152007BB80B /* Frameworks */,
@@ -185,19 +153,9 @@
 		42A87DBC1FDEB152007BB80B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42A87DFA1FDEE5BB007BB80B /* FBSnapshotTestCase.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		42A87DE61FDECCA5007BB80B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				42A87DED1FDECCA5007BB80B /* FBSnapshotTestCase.framework */,
-				42A87DEF1FDECCA5007BB80B /* FBSnapshotTestCase iOS Tests.xctest */,
-				42A87DF11FDECCA5007BB80B /* FBSnapshotTestCase.framework */,
-				42A87DF31FDECCA5007BB80B /* FBSnapshotTestCase tvOS Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,49 +217,12 @@
 			mainGroup = 42A87D5C1FDEA795007BB80B;
 			productRefGroup = 42A87D671FDEA795007BB80B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 42A87DE61FDECCA5007BB80B /* Products */;
-					ProjectRef = 42A87DE51FDECCA5007BB80B /* FBSnapshotTestCase.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				42A87D651FDEA795007BB80B /* Snapshot-tests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		42A87DED1FDECCA5007BB80B /* FBSnapshotTestCase.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FBSnapshotTestCase.framework;
-			remoteRef = 42A87DEC1FDECCA5007BB80B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42A87DEF1FDECCA5007BB80B /* FBSnapshotTestCase iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "FBSnapshotTestCase iOS Tests.xctest";
-			remoteRef = 42A87DEE1FDECCA5007BB80B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42A87DF11FDECCA5007BB80B /* FBSnapshotTestCase.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FBSnapshotTestCase.framework;
-			remoteRef = 42A87DF01FDECCA5007BB80B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42A87DF31FDECCA5007BB80B /* FBSnapshotTestCase tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "FBSnapshotTestCase tvOS Tests.xctest";
-			remoteRef = 42A87DF21FDECCA5007BB80B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		42A87D641FDEA795007BB80B /* Resources */ = {
